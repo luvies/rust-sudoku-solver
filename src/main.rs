@@ -26,7 +26,6 @@ fn main() {
     let sdk: sudoku::Working = serde_json::from_str::<sudoku::Serializable>(&contents)
         .unwrap()
         .into();
-    
     println!("from disk");
     println!("{}", sdk);
 }
